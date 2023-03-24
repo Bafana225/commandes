@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ModelComponent } from './model/model.component';
 import { ClientComponent } from './client/client.component';
-import { CommandeComponent } from './commande/commande.component';
+import { CommandesComponent } from './commandes/commandes.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ModelComponent,
     ClientComponent,
-    CommandeComponent
+    CommandesComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
