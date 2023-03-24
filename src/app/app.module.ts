@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClientComponent } from './client/client.component';
 import { CommandesComponent } from './commandes/commandes.component';
+import { AddCommandeComponent } from './add-commande/add-commande.component';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { CommandesComponent } from './commandes/commandes.component';
     AppComponent,
     ClientComponent,
     CommandesComponent,
+    AddCommandeComponent,
     
     
   ],
