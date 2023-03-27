@@ -29,6 +29,7 @@ export class CommandesComponent implements OnInit {
   }
 
   supprimerCommande(c: Commande) {
+    console.log(c.idCommande);
     let conf = confirm("Etes-vous sûr ?");
     if (conf)
       this.commandeService.supprimerCommande(c.idCommande).subscribe(() => {
