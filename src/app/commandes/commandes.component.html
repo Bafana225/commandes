@@ -1,16 +1,20 @@
+
 <div class="container">
     <div class="card shadow mb-4">
         <div class="card-body">
             <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Commandes</th>
-                    </tr>
-                </thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Date de commande</th>
+                    <th>Montant</th>
+                </tr>
                 <tbody *ngFor="let commande of commandes">
                     <tr>
+                        <td>{{commande.idCommande}}</td>
                         <td>{{commande.dateCommande}}</td>
                         <td>{{commande.montantTotal}}</td>
+                        <td class="btn btn-danger" (click)="supprimerCommande(commande)">Supprimer</td>
+                        <td class="btn btn-success" [routerLink]="['/update-commande',commande.idCommande]">Modifier</td>
                     </tr>
                 </tbody>
             </table>
