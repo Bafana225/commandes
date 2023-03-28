@@ -23,11 +23,12 @@ export class CommandeService {
   }
 
   ajouterCommande(com: Commande): Observable<Commande> {
+    console.log(com);
     return this.http.post<Commande>(this.apiURL, com, httpOptions);
   }
 
   supprimerCommande(id: number) {
-    console.log("ok");
+    console.log("Commande supprimée");
     const url = `${this.apiURL}/${id}`;
     return this.http.delete(url, httpOptions);
   }

@@ -1,7 +1,7 @@
 //import { Client } from "./client.model";
 
 export class Commande {
-    idCommande! : number;
+    id! : number;
     dateCommande! : Date;
     montantTotal! : number;
     //client! : Client;
