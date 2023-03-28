@@ -13,7 +13,7 @@ const httpOptions = {
 })
 
 export class CommandeService {
-    apiURL: string = 'http://localhost:8080/commandes/api';
+    apiURL: string = 'http://localhost:8080/commandes/commandes-api';
     commandes! : Commande[]; 
   
   constructor(private http : HttpClient) { }

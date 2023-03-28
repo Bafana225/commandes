@@ -1,10 +1,10 @@
 import { Commande } from "./commande.model";
 
 export class Client {
-    idClient! : number;
+    id! : number;
     nom! : string;
-    prenom! : number;
-    email! : number;
-    telephone! : number;
+    prenom! : string;
+    email! : string;
+    telephone! : string;
     commandes! : Commande[];
     }

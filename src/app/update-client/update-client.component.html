@@ -1,0 +1,26 @@
+<div class="container">
+    <div>
+        <h2>Modifier un client :</h2>
+    </div>
+    <form>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+            <label>ID Client</label>
+            <input readonly type="text" [(ngModel)]="currentClient.id" name="idClient" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label>Nom</label>
+            <input type="text" [(ngModel)]="currentClient.nom" name="nom" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label>Prénom</label>
+            <input type="text" [(ngModel)]="currentClient.prenom" name="prenom" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label>Email</label>
+            <input type="email" [(ngModel)]="currentClient.email" name="adresse" class="form-control">
+        </div>
+        <div class="mt-2">
+            <button type="submit" (click)="updateClient()" class="btn btn-success">Modifier</button>
+        </div>
+    </form>
+</div>
