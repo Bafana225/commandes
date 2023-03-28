@@ -15,7 +15,17 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/commande">Home</a>
       </li>
-      <!-- Dropdown -->
+      <!-- Dropdown Clients -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Clients
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink="/add-client">Ajouter</a>
+          <a class="dropdown-item" href="/clients">Lister</a>
+        </div>
+      </li>
+      <!-- Dropdown Commandes -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
           Commandes
